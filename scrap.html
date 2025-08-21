@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrap HTML Example</title>
+    <link rel="stylesheet" href="scrap.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="skills.css">
+
+
+</head>
+<body style="overflow-x: hidden; overflow-y: auto;">
+  <nav class="navbar">
+    <ul>
+        <li><a href="#about-section">ABOUT</a></li>
+        <li><a href="#projects-section">PROJECTS</a></li>
+        <li><a href="#contact-section">CONTACT</a></li>
+    </ul>
+</nav>
+  <div class="cursor-follower"></div>
+  
+  <div class="hero-container">
+    <video autoplay muted loop playsinline id="myVideo">
+        <source src="smoke.mp4" type="video/mp4">
+        </video>
+    <div class="hero-content">
+        <h1>Hello</h1>
+        <h3>I am <span class="name">Hezekia Frank</h3>
+        <h4>Fullstack Developer. UI & UX Designer. Product Designer.</h4>
+    </div>
+</div>
+     </div>
+
+
+</div>
+
+<div class="container2">
+  <div class="about">
+    <h2><span class="blur">LETANI</span><br>
+      <span class="blur">CRISOR</span><br>
+      <span class="blur">S</span><span class="about-text">ABOUT</span><br>
+      <span class="blur">TIMALV</span>
+      </h2>
+  </div>
+  <div class="text2">
+  </div>
+
+  <div class="line2">
+  </div>
+
+  <div class="boxes">
+    <div class="box">
+      <h3>Resume</h3>
+      <h4 style="font-size: 1.5rem; border-bottom: 1px solid black; padding-bottom: 10px;">Experience</h4>
+      <h4 style="margin-top: 5px;">MMUST Uni<br>
+        <span class="sub-text">Junior Software Admin</span>
+        <span class="period-text">2025/5 - 2025/8</span>
+      </h4>
+      <h4 style="margin-top: 5px;">Whitepath Company Ltd<br>
+        <span class="sub-text">Call center Agent</span>
+        <span class="period-text">2024/3 - 2024/8</span>
+      </h4>
+       <h4 style="margin-top: 5px;">Gilchery Skip Trace<br>
+        <span class="sub-text">Debt Collector</span>
+        <span class="period-text">2023/4 - 2023/11</span>
+      </h4>
+    </div>
+      <div style="margin-top: 65px;" class="box">
+      <h4 style="font-size: 1.5rem; border-bottom: 1px solid black; padding-bottom: 10px;">Education</h4>
+      <h4 style="margin-top: 5px;">KCA University<br>
+        <span class="sub-text">Diploma in Information Technology</span>
+        <span class="period-text">2023 - Present</span>
+      </h4>
+      <h4 style="margin-top: 5px;">Kanga High School<br>
+        <span class="sub-text">Kenya Certificate of Secondary Education</span>
+        <span class="period-text">2019 - 2022</span>
+      </h4>
+       <h4 style="margin-top: 5px;">CITAM Academy<br>
+        <span class="sub-text">Kenya Certficate of Primary Education</span>
+        <span class="period-text">2008 - 2018</span>
+      </h4>
+    </div>
+  </div>
+
+  <div class="card-stack-wrapper">
+    <div class="card-stack" id="cardStack">
+      <!-- Skills Card -->
+      <div class="card active" data-index="0">
+        <h2>Skills</h2>
+        <div class="skill-item">
+          <span class="skill-label">Web Development</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+          <span class="skill-percentage">95%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-label">UI & UX Design</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-label">Product Design & Branding</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 88%"></div>
+          </div>
+          <span class="skill-percentage">88%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-label">App Development</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 75%"></div>
+          </div>
+          <span class="skill-percentage">80%</span>
+        </div>
+      </div>
+
+      <!-- Languages Card -->
+      <div class="card" data-index="1">
+        <h2>Languages</h2>
+        <div class="languages-section">
+          <div class="language-category">
+            <h3>Frontend</h3>
+            <div class="language-tags">
+              <span class="language-tag">JavaScript</span>
+              <span class="language-tag">React</span>
+              <span class="language-tag">HTML5</span>
+              <span class="language-tag">CSS3</span>
+            </div>
+          </div>
+          <div class="language-category">
+            <h3>Backend</h3>
+            <div class="language-tags">
+              <span class="language-tag">Python</span>
+              <span class="language-tag">PHP</span>
+              <span class="language-tag">Kotlin</span>
+              <span class="language-tag">Django</span>
+            </div>
+          </div>
+          <div class="language-category">
+            <h3>Database</h3>
+            <div class="language-tags">
+              <span class="language-tag">PostgreSQL</span>
+              <span class="language-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UX & UI Tools Card -->
+      <div class="card" data-index="2">
+        <h2>UI & UX Tools</h2>
+        <div class="tools-section">
+          <div class="tool-category">
+            <h3>Design Tools</h3>
+            <div class="tool-list">
+              <div class="tool-item">
+                <span class="tool-name">Figma</span>
+                <span class="tool-description">Interface Design & Prototyping</span>
+              </div>
+              <div class="tool-item">
+                <span class="tool-name">Canva</span>
+                <span class="tool-description">Graphic Design</span>
+              </div>
+              <div class="tool-item">
+                <span class="tool-name">Lunacy</span>
+                <span class="tool-description">User Interface Design</span>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-arrows">
+      <button class="arrow-btn" id="upBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="18,15 12,9 6,15"></polyline>
+        </svg>
+      </button>
+      <button class="arrow-btn" id="downBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6,9 12,15 18,9"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="about-info">
+    ~<p>I am a Fullstack Developer passionate in creating digital future.<br> Excellent frontend capabilities to bridge back-end logic.<br> My focus extends to the levels of Artificial Intelligence and Network engineering.<br>I believe in the power of collaboration to solve real world problems.<br> Currently exploring advanced concepts in Software Development, involving Microservices Architecutre and DevOps practices.</p>
+  </div>
+
+</div>
+
+<section class="animation-section">
+  <div class="images-container">
+    <div class="center-text">
+      <h2>" Art & technology. Fused to envoke an experience<br>
+      built on the poetry of code. Expressed through<br> the feeling of design. "
+      </h2>
+      <p>~ Hezekia</p>
+    </div>
+
+    <div class="title-text">
+      <h2>PROJECTS</h2>
+    </div>
+    
+    <div class="line3">
+    </div>
+
+    <div class="image-item" data-target-x="-300" data-target-y="-200">
+      <img src="chair and lamp.jpg" alt="Pampas grass">
+      <span class="image-label">E-COMMERCE</span>
+    </div>
+    
+    <div class="image-item" data-target-x="0" data-target-y="-100">
+      <img src="download (3).jpg" alt="Modern interior">
+      <span class="image-label">BRANDING</span>
+    </div>
+    
+    <div class="image-item" data-target-x="350" data-target-y="-150">
+      <img src="dark _wallpaper.jpg" alt="Cozy corner">
+      <span class="image-label">UI DESIGN</span>
+    </div>
+    
+    <div class="image-item" data-target-x="-250" data-target-y="150">
+      <img src="app3.jpg" alt="Minimalist design">
+      <span class="image-label">APPLICATION</span>
+    </div>
+    
+    <div class="image-item" data-target-x="300" data-target-y="200">
+      <img src="cases design.jpg" alt="Ceramic objects">
+      <span class="image-label">GRAPHIC DESIGN</span>
+    </div>
+
+<div class="image-item" data-target-x="0" data-target-y="100">
+      <img src="chair.jpg" alt="Ceramic objects">
+      <span class="image-label">ARTISAN CRAFT</span>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="footer-info">
+  <h1>Want to create a project?</h1>
+  <h2>Let's make it happen :)</h2>
+  </div>
+  
+  <div class="footer-contact">
+    <div class="contact">
+    <h3>Like my work?</h3>
+    <a href="#">hello@gmail.com</a>
+    <a href="#">0710000002</a>
+    </div>
+
+    <div class="contact">
+    <h3>Follow me:</h3>
+    <a href="#">Linked In</a>
+    <a href="#">Instagram</a>
+    <a href="#">Github</a></div>
+
+  </div>
+  <p class="copyright">Hezekia &copy;2025</p>
+</div>
+
+    <script src="hero.js"></script>
+    <script src="skills.js"></script>
+    <script src="projects.js"></script>
+
+      <script>
+        const navbar = document.querySelector('.navbar');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+            // Scrolling down
+            navbar.classList.remove('active');
+        } else {
+            // Scrolling up
+            if (window.scrollY > 0) {
+                navbar.classList.add('active');
+            } else {
+                navbar.classList.remove('active');
+            }
+        }
+        lastScrollY = window.scrollY;
+    }); 
+
+      const cursorFollower = document.querySelector('.cursor-follower');
+
+      // Function to move the main cursor
+      document.addEventListener('mousemove', (e) => {
+        cursorFollower.style.left = `${e.clientX}px`;
+        cursorFollower.style.top = `${e.clientY}px`;
+      });
+
+      // Function to create the ripple effect on click
+      document.addEventListener('click', (e) => {
+        // Create a new ripple element
+        const ripple = document.createElement('div');
+        ripple.classList.add('ripple');
+        document.body.appendChild(ripple);
+
+        // Position the ripple at the click location
+        ripple.style.left = `${e.clientX}px`;
+        ripple.style.top = `${e.clientY}px`;
+        
+        // Create a randomized size for the ripple
+        const size = Math.random() * 20 + 20; // Size between 20px and 40px
+        ripple.style.width = `${size}px`;
+        ripple.style.height = `${size}px`;
+
+        // Remove the ripple element after its animation completes
+        ripple.addEventListener('animationend', () => {
+          ripple.remove();
+        });
+      });
+
+      // Get all range inputs with the class 'skills'
+const skillsRanges = document.querySelectorAll('.skills input[type="range"]');
+
+skillsRanges.forEach(rangeInput => {
+  // Set the initial fixed value
+  const fixedValue = rangeInput.value;
+
+  // Add an event listener to prevent the value from changing
+  rangeInput.addEventListener('input', () => {
+    rangeInput.value = fixedValue;
+  });
+});
+    </script>
+</body>
+</html>
+
+
+

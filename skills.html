@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Stack Interface</title>
+  <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card-stack-wrapper">
+      <div class="card-stack" id="cardStack">
+        <!-- Skills Card -->
+        <div class="card active" data-index="0">
+          <h2>Skills</h2>
+          <div class="skill-item">
+            <span class="skill-label">JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">React</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">CSS</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%"></div>
+            </div>
+            <span class="skill-percentage">88%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Node.js</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+            <span class="skill-percentage">75%</span>
+          </div>
+        </div>
+
+        <!-- Languages Card -->
+        <div class="card" data-index="1">
+          <h2>Languages</h2>
+          <div class="languages-section">
+            <div class="language-category">
+              <h3>Frontend</h3>
+              <div class="language-tags">
+                <span class="language-tag">JavaScript</span>
+                <span class="language-tag">React</span>
+                <span class="language-tag">HTML5</span>
+                <span class="language-tag">CSS3</span>
+              </div>
+            </div>
+            <div class="language-category">
+              <h3>Backend</h3>
+              <div class="language-tags">
+                <span class="language-tag">Python</span>
+                <span class="language-tag">PHP</span>
+                <span class="language-tag">Java</span>
+                <span class="language-tag">Express</span>
+                <span class="language-tag">Django</span>
+              </div>
+            </div>
+            <div class="language-category">
+              <h3>Database</h3>
+              <div class="language-tags">
+                <span class="language-tag">PostgreSQL</span>
+                <span class="language-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UX & UI Tools Card -->
+        <div class="card" data-index="2">
+          <h2>UX & UI Tools</h2>
+          <div class="tools-section">
+            <div class="tool-category">
+              <h3>Design Tools</h3>
+              <div class="tool-list">
+                <div class="tool-item">
+                  <span class="tool-name">Figma</span>
+                  <span class="tool-description">Interface Design & Prototyping</span>
+                </div>
+                <div class="tool-item">
+                  <span class="tool-name">Adobe XD</span>
+                  <span class="tool-description">User Experience Design</span>
+                </div>
+                <div class="tool-item">
+                  <span class="tool-name">Sketch</span>
+                  <span class="tool-description">Digital Design Platform</span>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-arrows">
+        <button class="arrow-btn" id="upBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18,15 12,9 6,15"></polyline>
+          </svg>
+        </button>
+        <button class="arrow-btn" id="downBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6,9 12,15 18,9"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="skills.js"></script>
+</body>
+</html>

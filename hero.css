@@ -1,0 +1,119 @@
+/* Universal and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+/* ------------------------------------- Hero Container ------------------------------------- */
+.hero-container {
+    --hero-scale: 1;
+    --hero-translate-x: 0%;
+    --hero-translate-y: 0%;
+    --hero-border-radius: 0%;
+
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: transparent; /* Changed to transparent to avoid the dark background */
+    transform: 
+        scale(var(--hero-scale))
+        translate(var(--hero-translate-x), var(--hero-translate-y));
+    transition: transform 0.5s ease-out, border-radius 0.5s ease-out;
+    border-radius: var(--hero-border-radius);
+    will-change: transform;
+}
+/* ------------------------------------- Background Video ------------------------------------- */
+#myVideo {
+    /* Initial state: tiny, in the top-left corner */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 90vh;
+    object-fit: cover;
+    transform: scale(0.01) translate(0, 0); /* Start with a tiny, top-left view */
+    transition: transform 1.8s cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 0;
+    border-radius: 5px;
+    border: none;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+/* ------------------------------------- Hero Content ------------------------------------- */
+.hero-content {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+.hero-content h1 {
+     position: absolute;
+    top: 50%;
+    left: 10%;
+    margin-left: 50px;
+    padding: 20px 20px;
+    width:73px;
+    height: 75px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+    row-gap: 3px;
+    letter-spacing: 1rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out 1.5s;
+    border: 1px solid #212121;
+    font-weight: bold;
+}
+.name{
+    font-weight: bold;
+    color: #fff;
+}
+.hero-content h3 {
+  position: absolute;
+    top: 50%;
+    right: -20%;
+    padding-top: 30px;
+    padding-left: 80px;
+
+    width: 680px;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out 1.5s;
+    border-bottom: 1.5px solid #fff;
+    font-weight: bold;
+    margin-left: 100px;
+}
+.hero-content h4 {
+    position: absolute;
+      top: 70%;
+      right: -20%;
+      width:700px;
+      height: 80px;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #ccc;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease-in-out 1.5s;
+    letter-spacing: 0.04rem;
+
+  }
+
+/* ------------------------------------- Scroll-Down Content ------------------------------------- */
